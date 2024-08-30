@@ -32,21 +32,26 @@ Flow-Log-Tagger is a C++ program designed to process AWS VPC flow logs, mapping 
    cd build
    ```
 3. Compile the program:
- ``` cmake .. ```
+ ``` cmake .. 
+ ```
  
 4. Run the Program:
-```./flow_log_parser ../data/flow_log.txt ../data/lookup_table.csv```
+```./flow_log_parser ../data/flow_log.txt ../data/lookup_table.csv
+```
 
 5. (Optional) Specify a custom output directory:
-``` ./flow_log_parser ../data/flow_log.txt ../data/lookup_table.csv ../custom_output_dir```
+``` ./flow_log_parser ../data/flow_log.txt ../data/lookup_table.csv ../custom_output_dir
+```
 
 ###Option 2: Without CMake (Using g++ Directly)
 
 1. Compile the program using g++:
-```g++ -std=c++17 -Iinclude -o flow_log_parser src/main.cpp src/flow_log_parser.cpp src/lookup_table.cpp src/output_generator.cpp```
+```g++ -std=c++17 -Iinclude -o flow_log_parser src/main.cpp src/flow_log_parser.cpp src/lookup_table.cpp src/output_generator.cpp
+```
  
 2. Run the program by specifying the flow log file and lookup table file:
-```./flow_log_parser data/flow_log.txt data/lookup_table.csv```
+```./flow_log_parser data/flow_log.txt data/lookup_table.csv
+```
 
  This will generate the output files in the ./output directory by default. 
 
