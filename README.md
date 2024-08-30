@@ -33,7 +33,8 @@ Flow-Log-Tagger is a C++ program designed to process AWS VPC flow logs, mapping 
    ```
 3. Compile the program:
    ```
-   cmake .. 
+   cmake ..
+   make 
    ```
  
 4. Run the Program:
